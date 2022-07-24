@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box{
+        .box {
             border: 2px solid red;
             width: 150px;
-            height: 150px;
-            margin: 2px;
+            height: 1500px;
+            margin: 25px;
             display: inline-block;  /*divs arranged horizontally */
         }
-        #box3{
-            position: relative;     /*relative to its normal position*/
-            position: fixed ;
-        }
-        #box4{
-            position : fixed;
 
+        #box1 {
+            position: fixed;  /*Positions the element relative to the browser window*/
+            top: 0px;
+        }
+
+        #box2 {
+            position: absolute;  /* Positions the element relative to the positon of its first parent*/
+            top: 34px;
+            left: 34px;
+        }
+
+        #box3 {
+            position: relative;  /*relative to its normal position*/
+            top: 100px;
+            left: 25em;
+        }
+
+        #box4 {
+            height: 100px;
+            width: 100px;
+            margin-top: 25em;
+            position: sticky;  /* Positions the element relative to the users scroll position */
+            top: 0px;
         }
     </style>
 </head>
+
 <body>
-    <div class="box" id="box1">1</div>
-    <div class="box" id="box2">2</div>
-    <div class="box" id="box3">3</div>
-    <div class="box" id="box4">4. CHat with us : </div>
+    <div class="box" id="box1">1. fixed position</div>
+    <div class="box" id="box2">2. absolute position</div>
+    <div class="box" id="box3">3. relative position</div>
+    <div class="box" id="box4">4. "Chat with us" - sticky position</div>
 </body>
+
 </html>
