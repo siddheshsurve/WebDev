@@ -1,8 +1,10 @@
 import ReactDOM from 'react-dom';
+import App from './App';
+import './Index.css'
 
 
 ReactDOM.render(
-    <h1>Hello, Siddhesh Here</h1>,
+    <App />,
 
     document.getElementById('root')
 );
